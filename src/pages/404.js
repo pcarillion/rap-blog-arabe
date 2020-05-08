@@ -3,11 +3,11 @@ import styles from '../css/error.module.css'
 import {Link} from 'gatsby'
 import Banner from '../components/Banner'
 import Layout from '../components/Layout'
-const error = () => {
+const Error = () => {
     return (
         <Layout>
             <header className={styles.error}>
-                <Banner title="oops it's dead end">
+                <Banner title="oops il y a une erreur dans l'url">
                     <Link to="/" className="btn-white">
                         Retour à la page d'accueil
                     </Link>
@@ -17,4 +17,4 @@ const error = () => {
     )
 }
 
-export default 404
+export default Error
