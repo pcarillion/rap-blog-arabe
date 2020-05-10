@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../css/error.module.css'
-import {Link} from 'gatsby'
+// import {Link} from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
+
 import Banner from '../components/Banner'
 import Layout from '../components/Layout'
 const Error = () => {
@@ -8,9 +10,9 @@ const Error = () => {
         <Layout>
             <header className={styles.error}>
                 <Banner title="oops il y a une erreur dans l'url">
-                    <Link to="/" className="btn-white">
+                    <AniLink fade to="/" className="btn-white">
                         Retour à la page d'accueil
-                    </Link>
+                    </AniLink>
                 </Banner>
             </header>
         </Layout>
