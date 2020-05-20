@@ -20,7 +20,7 @@ const Footer = () => {
                     )
                 })}
             </div>
-            <div className={styles.icons}>
+            {/* <div className={styles.icons}>
                 {socialIcons.map((item, i) => {
                     return (
                         <a key={i} href={item.url} target="_blank" rel="noopener noreferrer">
@@ -28,9 +28,9 @@ const Footer = () => {
                         </a>
                     )
                 })}
-            </div>
+            </div> */}
             <div className={styles.copyright}>
-                copyright &copy; <a href="https://paul-carillion.net" target="_blank">Paul Carillion</a> 2020 Tous droits réservés
+                copyright &copy; <a href="https://paul-carillion.net" target="_blank">Paul Carillion</a> - 2020 - Tous droits réservés
             </div>
         </footer>
     )

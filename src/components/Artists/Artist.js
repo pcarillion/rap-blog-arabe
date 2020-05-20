@@ -9,7 +9,7 @@ import {useStaticQuery, graphql} from "gatsby"
 
 const getImage = graphql`
 query {
-    file(relativePath:{eq:"defaultBcg.jpeg"}){ 
+    file(relativePath:{eq:"XVM3aecef38-0d78-11e8-9bc2-6afb2a70ff2c.webp"}){ 
         childImageSharp{
         fluid{
           ...GatsbyImageSharpFluid

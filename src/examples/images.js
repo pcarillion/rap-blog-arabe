@@ -1,24 +1,24 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import styled from 'styled-components'
-import img from '../images/connectBcg.jpeg'
+import img from '../images/contact2.jpg'
 import Img from 'gatsby-image'
 
 // these are only code snippets and tries with Gatsby image plugin
 
 const getImages = graphql`
     query Images {
-        fixed:file(relativePath:{eq:"defaultBcg.jpeg"}){
+        fixed:file(relativePath:{eq:"dXVM3aecef38-0d78-11e8-9bc2-6afb2a70ff2c.webp"}){
           childImageSharp{
             fixed(width: 300,height:400, grayscale:true){
               ...GatsbyImageSharpFixed
             }
           }
         }
-        fluid:file(relativePath:{eq:"blogBcg.jpeg"}){
+        fluid:file(relativePath:{eq:"XVM3aecef38-0d78-11e8-9bc2-6afb2a70ff2c.webp"}){
           childImageSharp{
             fluid{
-              ...GatsbyImageSharpFluid_tracedSVG
+              ...GatsbyImageSharpFluid
             }
           }
         }

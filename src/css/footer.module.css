@@ -32,4 +32,13 @@
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   line-height: 2;
+  margin-top: 25px;
+}
+
+.copyright a {
+  color: white;
+}
+
+.copyright a:hover {
+  color: var(--primaryColor);
 }

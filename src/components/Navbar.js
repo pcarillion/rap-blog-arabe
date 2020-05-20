@@ -36,7 +36,7 @@ const Navbar = () => {
                         </AniLink></li>)
                     })}
                 </ul>
-                <div className={styles.navSocialLinks}>
+                {/* <div className={styles.navSocialLinks}>
                     {socicalIcons.map((item, i) =>{
                         return (
                             <a href={item.url} key={i} target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,7 @@ const Navbar = () => {
                             </a>
                         )
                     })}
-                </div>
+                </div> */}
             </div>
         </nav>
     )
