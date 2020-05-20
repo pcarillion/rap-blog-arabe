@@ -11,7 +11,7 @@ import SEO from '../components/SEO'
 
 const ArtistTemplate = ({data}) => {
 
-    const {title, description:{description}, country, images, songs} = data.artist
+    const {title, description:{description}, country, images, songs, source, sourceUrl} = data.artist
 
     const [mainImage, ...artistImages] = images
 
@@ -32,6 +32,7 @@ const ArtistTemplate = ({data}) => {
                         {country}
                     </div>
                     <p className={styles.desc}>{description}</p>
+                    {source && <p>Source: <a href={sourceUrl}>{source}</a></p>}
                     <h2>Morceaux</h2>
                     <div className={styles.journey}>
                         {songs.map((item, i) => {
@@ -60,6 +61,8 @@ query($slug:String!) {
         description
       }
       country
+      source
+      sourceUrl
       songs{
         url
         song
