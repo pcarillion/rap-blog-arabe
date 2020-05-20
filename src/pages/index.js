@@ -22,15 +22,15 @@ export default ({data}) => (
                 <SEO title="Accueil" description="blog rap arabe"/>
                 {/* <SimpleHero> */}
                 <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-                    <Banner title="Arabic rap blog" info="a blog about rap music in the arabic world">
+                    <Banner title="Le rap dans le monde arabe" info="Relayer et faire découvrir la culture hip hop du monde arabe">
                         <AniLink fade to='/blog' className='btn-white'>
-                            See the articles
+                            Voir les articles
                         </AniLink>
                     </Banner>
                 {/* </SimpleHero> */}
                 </StyledHero>
                 <About/>
-                <Services/>
+                {/* <Services/> */}
                 <ArtistsRev/>
         </Layout>
 )
@@ -38,7 +38,7 @@ export default ({data}) => (
 
 export const query = graphql`
 query {
-    defaultBcg:file(relativePath:{eq:"o-egypt-revolution-facebook.jpg"}){
+    defaultBcg:file(relativePath:{eq:"XVM3aecef38-0d78-11e8-9bc2-6afb2a70ff2c.webp"}){
       childImageSharp{
         fluid(quality:90, maxWidth: 4160){
           ...GatsbyImageSharpFluid_withWebp

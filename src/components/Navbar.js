@@ -4,7 +4,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import {FaAlignRight} from 'react-icons/fa'
 import links from '../constants/links'
 import socicalIcons from '../constants/social-icons'
-// import logo from '../images/logo.svg'
+import logo from '../images/logo.png'
 import styles from '../css/navbar.module.css'
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.navCenter}>
                 <div className={styles.navHeader}>
-                    {/* <img src={logo} alt="logo"/> */}
+                    <img src={logo} alt="logo"/>
                     <button 
                         type="button" 
                         className={styles.logoBtn}

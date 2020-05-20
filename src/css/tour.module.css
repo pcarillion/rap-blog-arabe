@@ -20,7 +20,7 @@
   transition: var(--mainTransition);
 }
 .img-container:hover .img {
-  opacity: 0.3;
+  opacity: 0.9;
 }
 
 .link {

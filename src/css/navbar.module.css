@@ -5,6 +5,11 @@
   align-items: center;
   padding: 1rem 1.25rem;
 }
+
+.nav-header img {
+  height: 60px;
+}
+
 .logo-btn {
   background: transparent;
   border: none;

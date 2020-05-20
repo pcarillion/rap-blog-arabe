@@ -30,7 +30,7 @@ const Footer = () => {
                 })}
             </div>
             <div className={styles.copyright}>
-                copyright &copy; Arabic rap blog 2020 All Rights Reserved
+                copyright &copy; <a href="https://paul-carillion.net" target="_blank">Paul Carillion</a> 2020 Tous droits réservés
             </div>
         </footer>
     )

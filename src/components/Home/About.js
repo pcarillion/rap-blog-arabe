@@ -7,7 +7,7 @@ import Img from 'gatsby-image'
 
 const getAbout = graphql`
 query aboutImage{
-    aboutImage:file(relativePath:{eq:"defaultBcg.jpeg"}){
+    aboutImage:file(relativePath:{eq:"sh2.jpg"}){
       childImageSharp{
         fluid(maxWidth:600){
           ...GatsbyImageSharpFluid_tracedSVG
@@ -31,17 +31,19 @@ const About = () => {
                 </article>
                 <article className={styles.aboutInfo}>
                     <h4>
-                        explore the difference
+                        Un blog sur le rap arabe...
                     </h4>
                     <p>
-                        premier paragraphe
+                        Dans les pays francophones, on parle beaucoup du rap français ou du rap US, mais assez peu
+                        du rap des pays arabes. Pourtant, les difficultés économiques et politiques qui touchent
+                        une population jeune forment un terrain propice au développement d'une culture hip-hop.
                     </p>
                     <p>
-                        second paragraphe
+                        Les révoltes et révolutions qui ont eu lieu dans de nombreux pays arabes depuis 2011 ont
+                        à la fois révélé et propulsé de nombreux artistes sur le devant de la scène et méritent 
+                        d'être connus en France. Ce petit site propose de présenter ces artistes et leur musique, 
+                        ainsi que de relayer des articles sur le rap dans le monde arabe. 
                     </p>
-                    <button type='button' className='btn-primary'>
-                        En savoir plus
-                    </button>
                 </article>
             </div>
         </section>
