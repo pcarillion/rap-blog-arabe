@@ -29,19 +29,22 @@ const ArtistTemplate = ({data}) => {
                     
                     <h2>{title}</h2>
                     <div className={styles.info}>
-                        {country}
+                        <p>{country}</p>
                     </div>
                     <p className={styles.desc}>{description}</p>
-                    {source && <p>Source: <a href={sourceUrl}>{source}</a></p>}
+                    {source && <p className={styles.source}>Source: <a href={sourceUrl}>{source}</a></p>}
                     <h2>Morceaux</h2>
                     <div className={styles.journey}>
                         {songs.map((item, i) => {
                             return  <Song key={i} song={item.song} url={item.url}/>
                         })}
                     </div>
-                    <AniLink fade to="/artists" className="btn-primary">
-                        Retour aux artistes
-                    </AniLink>
+                    <div className={styles.btnDiv}>
+                        <AniLink fade to="/artists" className="btn-primary margin-auto">
+                            Retour aux artistes
+                        </AniLink>
+                    </div>
+                    
                 </div>
             </section>
         </Layout>

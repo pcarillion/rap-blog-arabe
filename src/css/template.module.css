@@ -1,6 +1,10 @@
 .template {
   padding: 4rem 0;
 }
+
+.template * {
+  /* border: red 0.5px solid; */
+}
 .center {
   width: 80vw;
   margin: 0 auto;
@@ -18,17 +22,16 @@
 .template h2 {
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 .info {
-  display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 .info p {
-  display: flex;
-  align-items: center;
-  margin-right: 2rem;
-  text-transform: capitalize;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 .icon {
   color: var(--primaryColor);
@@ -37,15 +40,29 @@
 }
 .desc {
   line-height: 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.source {
+  width: 70vw;
+  margin: 0 auto;
 }
 .template h4 {
   text-transform: capitalize;
 }
 .template h2 {
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 .journey {
-  margin: 3rem 0;
+  margin: 3rem auto;
+}
+
+.btn-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 992px) {
   .journey,
