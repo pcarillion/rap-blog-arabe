@@ -12,7 +12,7 @@ import SEO from '../components/SEO'
 const contact = ({data}) => {
     return (
         <Layout>
-            <SEO title="Contact" :>
+            <SEO title="Contact" />
             <StyledHero img={data.contactBcg.childImageSharp.fluid} />
             <Contact/>
         </Layout>
