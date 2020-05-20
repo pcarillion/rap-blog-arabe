@@ -6,11 +6,13 @@ import StyledHero from '../components/StyledHero'
 import {graphql} from 'gatsby'
 
 import Contact from '../components/Contact/Contact'
+import SEO from '../components/SEO'
 
 
 const contact = ({data}) => {
     return (
         <Layout>
+            <SEO title="Contact" :>
             <StyledHero img={data.contactBcg.childImageSharp.fluid} />
             <Contact/>
         </Layout>

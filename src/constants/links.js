@@ -7,6 +7,10 @@ export default [
         path: '/blog',
         text: "blog"
     },
+    // {
+    //     path: '/blogs',
+    //     text: "blogs"
+    // },
     {
         path: '/artists',
         text: "artistes"

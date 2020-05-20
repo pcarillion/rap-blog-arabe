@@ -9,13 +9,18 @@ import StyledHero from '../components/StyledHero'
 
 import {graphql} from 'gatsby'
 
+import BlogList from '../components/Blog/BlogList'
+import SEO from '../components/SEO'
+
 
 
 export default class blog extends Component {
     render() {
         return (
             <Layout>
+            <SEO title="Blog"/>
                 <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid}/>
+                <BlogList/>
             </Layout>
         )
     }

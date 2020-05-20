@@ -11,6 +11,11 @@
   background: var(--primaryColor);
   transition: var(--mainTransition);
 }
+.img-container * {
+  height: 300px;
+}
+
+
 .img {
   transition: var(--mainTransition);
 }
@@ -32,6 +37,7 @@
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
+  height: fit-content
 }
 .link:hover {
   background: var(--mainWhite);

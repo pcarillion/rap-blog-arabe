@@ -10,11 +10,16 @@ import About from '../components/Home/About'
 import Services from '../components/Home/Services'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
+import ArtistsRev from '../components/Home/ArtistsRev'
+
+import SEO from '../components/SEO'
+
 import {graphql} from 'gatsby'
 
 export default ({data}) => (
 
         <Layout>
+                <SEO title="Accueil" description="blog rap arabe"/>
                 {/* <SimpleHero> */}
                 <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
                     <Banner title="Arabic rap blog" info="a blog about rap music in the arabic world">
@@ -26,6 +31,7 @@ export default ({data}) => (
                 </StyledHero>
                 <About/>
                 <Services/>
+                <ArtistsRev/>
         </Layout>
 )
 

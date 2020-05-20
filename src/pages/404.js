@@ -5,9 +5,12 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 import Banner from '../components/Banner'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+
 const Error = () => {
     return (
         <Layout>
+            <SEO title="Error"/>
             <header className={styles.error}>
                 <Banner title="oops il y a une erreur dans l'url">
                     <AniLink fade to="/" className="btn-white">

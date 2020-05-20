@@ -14,15 +14,23 @@ module.exports = {
   siteMetadata:{
     title: "Rap Arabe Blog",
     description: "un blog de rap du monde arabe",
-    author: "Paul Carillion"
+    author: "Paul Carillion",
+    twitterUsername: "Paul Carillion",
+    image: '', // mettre le path de l'image après l'avoir copiée dans le dossier static
+    siteUrl: "https://rap-arabe-blog.netlify.app/",
+    
+
   },
 
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-playground`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-contentful`,
       options: {
@@ -36,6 +44,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images/`,
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://rap-arabe-blog.netlify.app/',
+        sitemap: 'https://rap-arabe-blog.netlify.app/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     }
   ],

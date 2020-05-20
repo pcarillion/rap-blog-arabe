@@ -4,13 +4,19 @@ import Layout from '../components/Layout'
 
 import StyledHero from '../components/StyledHero'
 
+import Artists from '../components/Artists/Artists'
+
 import {graphql} from 'gatsby'
+
+import SEO from '../components/SEO'
 
 
 const artists = ({data}) => {
     return (
         <Layout>
+        <SEO title="Artists" />
             <StyledHero img={data.blogBcg.childImageSharp.fluid} />
+            <Artists/>
         </Layout>
     )
 }
