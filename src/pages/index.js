@@ -22,7 +22,7 @@ export default ({data}) => (
                 <SEO title="Accueil" description="blog rap arabe"/>
                 {/* <SimpleHero> */}
                 <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-                    <Banner title="Le rap dans le monde arabe" info="Relayer et faire découvrir la culture hip hop du monde arabe">
+                    <Banner title="El Rap El Arabi" info="Relayer et faire découvrir la culture hip hop du monde arabe">
                         <AniLink fade to='/blog' className='btn-white'>
                             Voir les articles
                         </AniLink>

@@ -27,7 +27,8 @@ const SEO = ({title, description}) => {
     return (
         <Helmet title={ `${title} | ${siteTitle}`} htmlAttributes={{lang:"eng"}}>
             <meta name="description" content={description || siteDesc}/>
-            {/* <meta name="image" content={image}/> */}
+            <meta rel="icon" href={image} />
+            <meta name="image" content={image}/>
         </Helmet>
     )
 }

@@ -20,7 +20,7 @@ const Song = ({song, url}) => {
                 </button>
             </h4>
             {
-                showInfo && <a href={`${url}`}><p>lien vers la vidéo</p></a>
+                showInfo && <a href={`${url}`} target='_blank'><p>lien vers la vidéo</p></a>
             }
         </article>
     )

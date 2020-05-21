@@ -1,6 +1,18 @@
 .blog {
   padding: 4rem 0;
 }
+
+.blog * {
+  /* border: red 0.5px solid; */
+}
+
+.img-div{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .center {
   width: 80vw;
   margin: 0 auto;

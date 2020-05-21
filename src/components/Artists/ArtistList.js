@@ -35,9 +35,6 @@ export default class ArtistList extends Component {
                         )
                     })}
                 </div>
-                <AniLink fade to='/artists' className="btn-primary">
-                    Tous les artistes
-                </AniLink>
             </section>
         )
     }

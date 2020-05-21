@@ -12,11 +12,11 @@ module.exports = {
   /* Your site config here */
 
   siteMetadata:{
-    title: "Rap Arabe Blog",
+    title: "El Rap El Arababi",
     description: "un blog de rap du monde arabe",
     author: "Paul Carillion",
     twitterUsername: "Paul Carillion",
-    image: '', // mettre le path de l'image après l'avoir copiée dans le dossier static
+    image: './static/logosite.png', 
     siteUrl: "https://rap-arabe-blog.netlify.app/",
     
 
@@ -53,6 +53,18 @@ module.exports = {
         sitemap: 'https://rap-arabe-blog.netlify.app/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/logosite.png`
+      },
+    },
   ],
 }
