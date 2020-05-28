@@ -12,7 +12,7 @@ module.exports = {
   /* Your site config here */
 
   siteMetadata:{
-    title: "El Rap El Arababi",
+    title: "El Rap El Arabi",
     description: "un blog de rap du monde arabe",
     author: "Paul Carillion",
     twitterUsername: "Paul Carillion",

@@ -10,7 +10,7 @@ query aboutImage{
     aboutImage:file(relativePath:{eq:"sh2.jpg"}){
       childImageSharp{
         fluid(maxWidth:600){
-          ...GatsbyImageSharpFluid_tracedSVG
+          ...GatsbyImageSharpFluid
         }
       }
     }
